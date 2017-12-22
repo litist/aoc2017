@@ -5,6 +5,8 @@ def knot_hash(input_string):
     input = [3,4,1,5]
     input = [157,222,1,2,177,254,0,228,159,140,249,187,255,51,76,30]
 
+    #print('knot_hash({})'.format(input_string))
+
     input = []
     for c in input_string:
         input.append(ord(c))
@@ -43,7 +45,7 @@ def knot_hash(input_string):
 
 
 
-    print('Result P1: {}'.format(L[0]*L[1]))
+    #print('Result P1: {}'.format(L[0]*L[1]))
 
 
     # make xor hash
@@ -55,7 +57,7 @@ def knot_hash(input_string):
 
         hex_hash += '{:02x}'.format(res)
 
-    print('Knot hash: {}'.format(hex_hash))
+    #print('Knot hash: {}'.format(hex_hash))
 
     return hex_hash
 
